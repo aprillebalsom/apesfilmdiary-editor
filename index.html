@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ape's film diary photo editor</title>
+    <script src="https://kit.fontawesome.com/a17f5cc577.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- start of header -->
+    <header>
+        <section class="wrapper">
+
+            <h1>film photo editor</h1>
+            <h2>create film-style photos with <span class="film-diary">ape's film diary</span> presets</h2>
+
+        </section>
+    </header>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <main>
+        <div class="wrapper">
+            <div class="main-flex">
+                <div class="image-container">
+                    
+                    <!-- image being filtered -->
+                    <div class="main-img">
+                        <img src="./assets/feature-photo.png" alt="two people modeling clothing in an alleyway">
+                        
+                        <!-- vintage filter-->
+                        <div class="grain">
+                            <img src="https://www.transparenttextures.com/patterns/bedge-grunge.png">
+                        </div>
+                        
+                        <!-- double exposure filter-->
+                        <div class="double-exp">
+                            <img src="./assets/double exposure.png">
+                        </div>
+                    
+                        <!-- light leak filter-->
+                        <div class="light-leak">
+                            <img src="./assets/light leak.jpg">
+                        </div>
+                   
+                        <!-- doodle stickers -->
+                        <img class="doodle" id="stars" src="./assets/stars.png">
+                    
+                        <img  class="doodle" id="rainbow" src="./assets/favicon.png">
+                    
+                        <img class="doodle" id="paint" src="./assets/paint.png">
+
+                        <!-- user's name -->
+                        <p id="user-name"> </p>
+
+                    </div>  
+
+                    <!-- just visual -->
+                    <img class="tape" src="./assets/tape.png">
+                
+                </div>
+            
+                <section class="pick-filter">
+                    <h3>pick a filter</h3>
+                
+                    <div class="filter-buttons">
+                        <button class="unclicked" id="filter-1">vintage</button>
+                
+                        <button class="unclicked" id="filter-2">double exposure</button>
+                
+                        <button class="unclicked"  id="filter-3">light leak</button>
+                
+                        <button class="unclicked"  id="no-filter">reset</button>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="flex-bottom">
+                <section class="doodle-info">
+            
+                    <h3>add some doodles</h3>
+                    <button class="unclicked" id="add-doodle">doodles</button>
+                    <p>click + drag the doodles to position where you like!</p>
+            
+                </section>
+            
+                <section class="name-it">
+            
+                    <h3>sign your name</h3>
+            
+                    <form action="#" method="post" class="name-form">
+            
+                        <label for="add-name"></label>
+                        <input type="text" id="add-name" placeholder="name" aria-describedby="name-input" maxlength="15">
+            
+                        <p class="sr-only" id="name-input">Add your name to your creation!</p>
+            
+                        <button type="submit">submit</button>
+
+                    </form>
+
+                    <p>the text can also be positioned by clicking + dragging it!</p>
+            
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <footer>
+
+        <div class="wrapper flex-footer">
+
+             <div class="juno">
+
+                <h4>created at</h4>
+                <a href="https://junocollege.com/" target="_blank">juno college</a>
+                
+            </div>
+
+            <div class="social">
+
+                <h4>share on social</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/sharer.php" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/intent/tweet" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="http://pinterest.com" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="inspired-by">
+                <h4>inspired by</h4>
+                <a href="https://apesfilmdiary.com/" target="_blank">ape's film diary</a>
+            </div>
+           
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    
+    <!-- javascript / jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
